@@ -29,22 +29,18 @@ export function HeroSection() {
           <button
             key={tab.label}
             onClick={() => setActiveDay(tab.label)}
-            className={`flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold transition-all ${
-              activeDay === tab.label
-                ? "bg-[#5686FF] text-[#1a1a2e] shadow-sm"
-                : "text-white/80 hover:text-white"
-            }`}
+            className={`flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold transition-all ${activeDay === tab.label
+              ? "bg-[#5686FF] text-[#1a1a2e] shadow-sm"
+              : "text-white/80 hover:text-white"
+              }`}
           >
             {tab.label}
-            {(activeDay !== tab.label || tab.label !== "Today") && (
-              <span
-                className={`text-xs ${
-                  activeDay === tab.label ? "text-[#1a1a2e]/70" : "text-white/50"
+            <span
+              className={`inline-block min-w-[2rem] text-center text-xs transition-opacity ${activeDay === tab.label ? "text-[#1a1a2e]/70" : "text-white/50"
                 }`}
-              >
-                {tab.count}
-              </span>
-            )}
+            >
+              {tab.count}
+            </span>
           </button>
         ))}
       </div>
