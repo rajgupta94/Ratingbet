@@ -38,7 +38,7 @@ export function Navbar() {
           {navItems.map((item) => (
             <button
               key={item.label}
-              className="flex items-center gap-1 rounded-md px-3 py-1.5 text-sm font-medium text-gray-300 transition-colors hover:text-white"
+              className="flex items-center gap-1 rounded-md px-3 py-1.5 text-sm font-medium text-[#FFFFFF] transition-colors hover:text-white"
             >
               {item.label}
               {item.hasDropdown && <ChevronDown className="h-3.5 w-3.5" />}
