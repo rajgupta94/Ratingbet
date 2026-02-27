@@ -18,7 +18,7 @@ export function FilterTabs() {
   const [activeFilter, setActiveFilter] = useState("Top games")
 
   return (
-    <div className="bg-white px-4 py-4">
+    <div className="px-4 py-4 flex justify-center">
       <div className="mx-auto flex max-w-7xl flex-wrap gap-2">
         {filters.map((filter) => (
           <button

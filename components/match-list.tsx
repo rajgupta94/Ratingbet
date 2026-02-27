@@ -84,7 +84,7 @@ const matches: Match[] = [
 
 export function MatchList() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-4">
+    <div className="mx-auto max-w-7xl px-4 py-4 w-5/6">
       <div className="overflow-hidden rounded-lg border border-gray-200 bg-white">
         {/* Table Header */}
         <div className="flex items-center gap-6 border-b border-gray-200 px-6 py-3">

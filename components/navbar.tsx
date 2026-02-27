@@ -22,7 +22,7 @@ const navItems = [
 export function Navbar() {
   return (
     <nav className="bg-[#1a1a1a] fixed w-full z-50 text-white">
-      <div className="mx-auto flex max-w-7xl items-center px-4 py-1">
+      <div className="mx-auto flex max-w-7xl items-center  py-1">
         {/* Logo */}
         <div className="mr-8 flex items-center gap-1.5">
           <div className="flex items-end gap-[3px]">
