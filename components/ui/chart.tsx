@@ -125,8 +125,10 @@ function ChartTooltipContent({
     indicator?: 'line' | 'dot' | 'dashed'
     nameKey?: string
     labelKey?: string
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     payload?: any[]
     active?: boolean
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     label?: any
   }) {
   const { config } = useChart()
@@ -263,6 +265,7 @@ function ChartLegendContent({
   Pick<RechartsPrimitive.LegendProps, 'verticalAlign'> & {
     hideIcon?: boolean
     nameKey?: string
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     payload?: any[]
   }) {
   const { config } = useChart()
